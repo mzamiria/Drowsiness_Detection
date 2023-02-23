@@ -5,16 +5,16 @@ If both eyes are closed for period of 10 video frames or more,it will issue a "W
 
 To run the app follow these steps:
 
-1.Fork the repository to your repository: (https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+**1.** Fork the repository to your repository: (https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
-2.Clone the repo on your server using the command: git clone < repo http >
+**2.** Clone the repo on your server using the command: **git clone < repo http >**
 
-3.In the command line create a new virtual environment: python venv -m .venv
+**3.** In the command line create a new virtual environment: **python venv -m .venv**
 
-4.Activate the environment by following command: .venv\Scripts\activate.bat for windows , other OSes source .venv/bin/activate
+**4.** Activate the environment by following command: **.venv\Scripts\activate.bat for windows , other OSes source .venv/bin/activate**
 
-5.cd the cloned repository and install requirement packages: cd path\to\cloned\repository\pip install -r requirements.txt
+**5.** cd the cloned repository and install requirement packages: **cd path\to\cloned\repository\pip install -r requirements.txt**
 
-6.Run the main.py file in the app folder : cd app\python main.py open your browser and open the http:// address refered in the command line.
+**6.** Run the main.py file in the app folder : cd app\python main.py open your browser and open the **http:// address refered in the command line.**
 
-7. Warning: Sometimes the video feed might not be received properly. To fix the issue just refresh the http:// tap.
+**7.** **Warning**: Sometimes the video feed might not be received properly. To fix the issue just refresh the http:// tap.
