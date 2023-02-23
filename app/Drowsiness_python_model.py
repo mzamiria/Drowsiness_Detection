@@ -5,11 +5,9 @@ Created on Tue Feb  1 12:27:47 2023
 @author: Mehrdad.Z
 """
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
 import os
 import keras
-
+import tensorflow as tf
 from keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.layers import Dense, Input, Dropout,Flatten, Conv2D
 from tensorflow.keras.layers import BatchNormalization, Activation, MaxPooling2D
@@ -18,7 +16,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
 from tensorflow.keras.utils import plot_model
 
-import tensorflow as tf
+
 
 
     
