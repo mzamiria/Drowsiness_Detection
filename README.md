@@ -15,6 +15,12 @@ To run the app follow these steps:
 
 **5.** cd the cloned repository and install requirement packages: **cd path\to\cloned\repository\pip install -r requirements.txt**
 
-**6.** Run the main.py file in the app folder : cd app\python main.py open your browser and open the **http:// address refered in the command line.**
+**6.** Run the **main.py** file in the app folder : **cd app\python main.py**
 
-**7.** **Warning**: Sometimes the video feed might not be received properly. To fix the issue just refresh the http:// tap.
+**7.** Open your browser and open the **http:// address** refered in the command line.
+
+**8.** **Warning**: Sometimes the video feed might not be received properly. To fix the issue just refresh the http:// tap.
+
+To visualize the statistics of the images using for training:
+**1.** cd to the **Visualization** folder and run command : **Voila Viz_images.ipynb**
+**2.** You will be directed to an html link and can see the interavtive plot.
