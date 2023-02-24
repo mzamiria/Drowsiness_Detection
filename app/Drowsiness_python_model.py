@@ -64,22 +64,21 @@ model.add(Dense(128))
 model.add(Activation('relu'))
 
 model.add(Dense(2, activation='softmax'))
-opt=Adam(learning_rate=0.0005)
+opt=Adam(learning_rate=0.00001)
 model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
 
-epochs=25
+epochs=100
 steps_per_epoch=train_generator.n//train_generator.batch_size
 validation_steps=validation_generator.n//validation_generator.batch_size
 
 # saving the weights
 checkpoint=ModelCheckpoint('model_weights.h5', monitor='val_accuracy',
                            save_weights_only=True, mode='max',verbose=1)
-reduce_lr=ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=2, min_lr=0.00001, mode='auto')
-callbacks=[checkpoint,reduce_lr]
+
 
 history=model.fit(train_generator, steps_per_epoch=steps_per_epoch, epochs=epochs,
-                  validation_data=validation_generator,validation_steps=validation_steps, callbacks=callbacks)
+                  validation_data=validation_generator,validation_steps=validation_steps)
 
 # saving the model
 model_json=model.to_json()
