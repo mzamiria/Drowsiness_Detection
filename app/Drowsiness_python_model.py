@@ -49,11 +49,15 @@ validation_generator=datagen_validation.flow_from_directory('Images/',
 model=Sequential()
 model.add(Conv2D(32,(3,3),padding='same',input_shape=(img_size,img_size,1)))
 model.add(Activation('relu'))
-model.add(MaxPooling2D(2,2))
+model.add(MaxPooling2D(3,3))
 
 model.add(Conv2D(64,(3,3),padding='same'))
 model.add(Activation('relu'))
-model.add(MaxPooling2D(2,2))
+model.add(MaxPooling2D(3,3))
+
+model.add(Conv2D(128,(3,3),padding='same'))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(3,3))
 
 model.add(Conv2D(128,(3,3),padding='same'))
 model.add(Activation('relu'))
@@ -65,7 +69,7 @@ model.add(Activation('relu'))
 
 model.add(Dense(2, activation='softmax'))
 opt=Adam(learning_rate=0.00001)
-model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer=opt, loss='binary_crossentropy', metrics=['accuracy'])
 model.summary()
 
 epochs=100
