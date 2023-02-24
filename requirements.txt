@@ -1,5 +1,4 @@
 Flask==1.1.2
-ipython==8.10.0
 ipywidgets==8.0.4
 keras==2.10.0
 matplotlib==3.5.2
