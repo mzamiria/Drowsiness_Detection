@@ -21,8 +21,8 @@ To run the app follow these steps:
 
 **8.** **Warning**: Sometimes the video feed might not be received properly. To fix the issue just refresh the http:// tap.
 
-***To visualize the statistics of the images used for training:***
+***To visualize the statistics of the images used for training or training results:***
 
-**1.** cd to the **Visualization** folder and run command : **Voila Viz_images.ipynb**
+**1.** cd to the **Visualization** folder and run either command : **voila Viz_images.ipynb**  ** voila CNN-loss-plot.ipynb**
 
 **2.** You will be directed to an html link and can see the interavtive plot.
